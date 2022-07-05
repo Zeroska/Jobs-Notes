@@ -31,3 +31,10 @@ We will dive in to the first section that you will do go give someone a permissi
 
 Using the **Security Tooling Account** servers as the admininistator account for security services that are managed in an admin/member structure throught out the AWS account,
 
+---
+
+## How Linux Process Created and What kind of Log does it generated
+
+The Linux by default doesn't log when the Process is created or not, Well you could say that but fork() and exec() is indicated of process creation
+
+How can you actually detect that link <https://unix.stackexchange.com/questions/163681/print-pids-and-names-of-processes-as-they-are-created>
