@@ -33,4 +33,6 @@ After deploying the WAR file, Tomcat unpacks it and stores all the project files
 
 ### Some real world implemtation
 
-Link: <https://github.com/Rica123/spider>
+Link: 
+
+<https://github.com/Rica123/spider>
