@@ -19,13 +19,23 @@ This picture can explain it very well, this picture I copy from the link above:
 There are few key point you need to remmeber about this technique:
 
 - It is noisy as hell 
-- 
+- It is simple to do
+- It is most common techniques used to inject malware into another process
 
+> By leveraging the Sysmon we would be able to detect when any process use CreateRemoteThread() (Event ID: 8 of sysmon) that wouble give an indicator to write our detection rule
+
+If you have a SIEM and it has correlation rule (which it will) then you write a rule that capture CreateRemoteThread() with the process id: A and process id: B
+
+#### Hunting notes: 
+
+Link: <https://threathunterplaybook.com/notebooks/windows/05_defense_evasion/WIN-180719170510.html> | talk really well about the threat hunting side
+
+---
 ### PE Injection | [T1055.002](https://attack.mitre.org/techniques/T1055/002)
 
 
-
-### Process Hollowing
+---
+### Process Hollowing [T1055.012](https://attack.mitre.org/techniques/T1055/012)
 
 ---
 ## Sysmon Logging
