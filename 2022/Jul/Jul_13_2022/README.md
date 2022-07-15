@@ -4,14 +4,22 @@ This is a note or a diary for the things I research in a day, this note intended
 
 ## Processs Injection | How to create detection rule.
 
+- Link: <https://redcanary.com/blog/process-injection-primer/>
+- Link: <https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf> (Really good paper on Process Injection)
+
 > As far as I know writing some code into another process memory is easy, Windows provides systems API to Read and Write the memory of other processes, you need:
 > - PID of the process
 
-Links: <https://redcanary.com/blog/process-injection-primer/>
+#### There are 3 type of process injection:
+1. Spawning process
+2. During Initilzation of a process
+3. **During Running of a process (consider the true process injection) -> will mostly be used**
 
-This is a Windows feature but was use by bad guys to create a way to **inject their malicous code to a legit process**, the first step to learn how to detect it to know how it works and what are the log and the resource it will create when using this technique and how hard can we detect it using SIEM and EDR
+This is a Windows feature but was use by bad guys to create a way to **inject    their malicous code to a legit process**, the first step to learn how to detect it to know how it works and what are the log and the resource it will create when using this technique and how hard can we detect it using SIEM and EDR
 
 ### DLL Injection | [T1055.001](https://attack.mitre.org/techniques/T1055/001)
+
+##### Big notes: CFG/CIG-readiness: CIG prevents loading on non-Microsoft signed DLL. An attempt to do so will result r 0xC0000428 (STATUS_INVALID_IMAGE_HASH – “The hash for image %hs cannot be found in the system catalogs. The image is likely corrupt or the victim of tampering.” 
 
 Link: <https://sec.vnpt.vn/2019/01/dll-injection/> explain very well about DLL Injection but use Vietnamese 
 
