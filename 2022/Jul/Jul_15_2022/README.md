@@ -12,7 +12,7 @@ Link: <https://blog.aquasec.com/cve-2022-32223-dll-hijacking>
 
 *Notes: the Edge broker processes are protected almost to the maximum possible level with the above techniques.*
 
-Well it is suppose to protect your processes from being inject, DLL injection will have to has Microsoft Signed
+Well it is suppose to protect your processes from being i`nject, DLL injection will have to has Microsoft Signed
 
 ---
 ## SSL and self-certs
