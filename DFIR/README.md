@@ -1,6 +1,8 @@
 # DFIR Process 
 
 Trying to build my own DFIR process | Investigation Process
+## How to organize a case
+
 
 
 ## Start with Initial Leads
